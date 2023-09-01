@@ -1,0 +1,699 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ***************************************Navbar*************************************** */
+.Head_Content {
+  background-image: url(Images/women-in-tech.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+
+}
+
+
+.Head_Content::before,
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 13, 13, 0.7);
+
+}
+
+.nav-bar {
+  padding-top: 1.5%;
+  background: linear-gradient(rgba(0, 0, 0), transparent);
+}
+
+@media screen and (max-width:990px) {
+  .nav-bar {
+    padding-top: 1.5%;
+    background: linear-gradient(rgba(138, 135, 135, 0.932), transparent);
+  }
+}
+
+.Main_Heading {
+  position: absolute;
+  margin-top: 16.5%;
+  margin-left: 5%;
+  color: white;
+
+}
+
+.Main_Heading p {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.Main_Heading h1 {
+  font-size: 60px;
+  line-height: 50px;
+  /* margin-left: -10px; */
+  font-weight: 600;
+  color: transparent;
+  -webkit-text-stroke: 1px #e0d6d6;
+  background: url(Images/back.png);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+  letter-spacing: 2px;
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.Main_Heading h3 {
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 1%;
+  font-weight: 600;
+  letter-spacing: 5px;
+  border-right: 5px solid;
+  color: #e7d4d5;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 95%;
+  animation: typing 3s steps(21) infinite alternate, cursor .8s step-end infinite alternate;
+
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+/* **************************Media-Queries For Front Headings****************************** */
+@media screen and (min-width:300px) and (max-width:380px) {
+  
+  .Main_Heading {
+    margin-top: 160px;
+    margin-left:7px;
+  }
+  .Main_Heading h3{
+    width: 93%;
+    font-size: 18px;
+  }
+  .nav-list::after {
+    content: '';
+   display: none;
+  }
+  
+  .nav-list:hover::after {
+    display: none;
+  
+  }
+  
+}
+@media screen and (min-width:381px) and (max-width:500px) {
+  
+  .Main_Heading {
+    margin-top: 160px;
+    margin-left:50px;
+  }
+  .nav-list::after {
+    content: '';
+   display: none;
+  }
+  
+  .nav-list:hover::after {
+    display: none;
+  
+  }
+}
+@media screen and (min-width:501px)and (max-width:815px) {
+  
+  .Main_Heading {
+    margin-top: 215px;
+    margin-left:100px;
+  }
+}
+
+@media screen and (min-width:816px) and (max-width:920px){
+  
+  .Main_Heading {
+    margin-top: 215px;
+    margin-left: 195px;
+  }
+  .nav-list::after {
+    content: '';
+   display: none;
+  }
+  
+  .nav-list:hover::after {
+    display: none;
+  
+  }
+}
+@media screen and (min-width:921px) {
+  
+  .Main_Heading {
+    margin-top: 215px;
+    margin-left: 260px;
+  }
+}
+@media screen and (min-width:1000px) {
+  
+  .Main_Heading {
+    margin-top: 220px;
+    margin-left:290px;
+  }
+}
+@media screen and (min-width:1001px) and (max-width:1500px) {
+  
+  .Main_Heading {
+    margin-top: 250px;
+    margin-left:400px;
+  }
+}
+.nav-list {
+  color: #fff;
+  position: relative;
+
+}
+
+.nav-list::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.nav-list:hover::after {
+  width: 50%;
+
+
+}
+
+/* ***************************************About*************************************** */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+
+.about-title {
+  padding-bottom: 30px;
+}
+
+.about-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.about-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.about-title p {
+  margin-bottom: 0;
+}
+
+.about-me {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: white;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.about-me .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
+
+.about-me .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-me .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about-me .content ul strong {
+  margin-right: 10px;
+}
+
+.about-me .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.about-me .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* *******************************************Skills***********************************88 */
+
+.section-bg {
+  background: #f5f5f5;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+}
+
+
+
+
+/* *******************************************Service-Section********************************* */
+.services-section {
+  margin-bottom: 60px;
+}
+
+.services-section h4,
+.Portfolio h4 {
+  position: relative;
+  padding: 0;
+  color: #000;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 30px;
+}
+
+.services-section h4::before,
+.Portfolio h4::before {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: rgb(33, 138, 187);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.services-section p,
+.Portfolio p {
+  color: #818181;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/* ******************************Service-Boxes******************* */
+.Services-Box {
+  background: #fff;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+
+}
+
+.Services-Box h4 {
+  color: #0078ff;
+  font-weight: 700;
+}
+
+.Services-Box:hover .Services-Box,
+.Services-Box:hover span.icon {
+  background: #fff;
+  border-radius: 30px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.Services-Box:hover h4,
+.Services-Box:hover p {
+  color: #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.icon {
+  font-size: 35px;
+  margin-bottom: 25px;
+  color: white;
+  padding: 10px 15px;
+  line-height: 96px;
+  border-radius: 40px;
+}
+
+
+.navbar-toggler {
+  color: white !important;
+}
+
+.Services-Box:hover,
+.icon,
+.feature_box_col_one {
+
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #7c8c9e;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.Services-Box .feature_box_col_one {
+  background: rgba(247, 198, 5, 0.2);
+  color: #f91942;
+
+}
+
+.Services-Box .feature_box_col_two {
+  background: rgba(255, 77, 28, 0.15);
+  color: #f91942;
+}
+
+.Services-Box .feature_box_col_three {
+  background: rgba(0, 147, 38, 0.15);
+  color: #f91942;
+}
+
+.Services-Box .feature_box_col_four {
+  background: rgba(0, 108, 255, 0.15);
+  color: #f91942;
+}
+
+.Services-Box .feature_box_col_five {
+  background: rgba(146, 39, 255, 0.15);
+  color: #f91942;
+}
+
+.Services-Box .feature_box_col_six {
+  background: rgba(23, 39, 246, 0.15);
+  color: #f91942;
+}
+
+.Services-Box p {
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.Services-Box h4 {
+  margin-bottom: 20px;
+  color: #2f2f2f;
+}
+
+/* **************************Portfolio-Cards***************************** */
+.card {
+  background: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+
+}
+
+.card img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-title {
+  font-weight: bold;
+  text-align: center;
+  margin-right: 7%;
+  font-size: 25px;
+}
+
+
+/* *****************************Contact-Me************************8 */
+
+.footer {
+  background-image: url(Images/footer-back.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: auto;
+}
+
+.contact-mf {
+  margin-top: 4rem;
+}
+
+.box-shadow-full {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.lead{
+  font-size: medium;
+   font-weight: 400;
+}
+
+@media screen and (max-width:420px){
+  .lead , .list-ico{
+    font-size: small;
+  }
+  
+}
+/* ********************Left-Box THINGS*********************************88 */
+.title-box-2 {
+  margin-bottom: 3rem;
+}
+
+.title-left {
+  font-size: 2rem;
+  position: relative;
+}
+
+.title-left:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+
+/* ****************boxesssss************ */
+.email-form input {
+  padding: 10px 15px;
+}
+
+.email-form input,
+.email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.email-form button[type=submit] {
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+/* **************Button***************** */
+.button {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0062d3;
+  color: #fff;
+  transition: all 500ms ease;
+}
+
+.button-a {
+  text-decoration: none;
+  background-color: #0078ff;
+  color: #fff;
+  border-color: #cde1f8;
+}
+
+.button-rouded {
+  border-radius: 5rem;
+}
+
+.button:hover {
+  text-decoration: none;
+  box-shadow: 0 0 0 4px #cde1f8;
+}
+
+/* ************************Info-part************************ */
+.list-ico {
+  line-height: 2;
+}
+
+.list-ico,
+.socials ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.list-ico span {
+  color: #0078ff;
+  margin-right: 10px;
+}
+
+/* ************************Socialssss************************ */
+.socials {
+  padding: 1.5rem 0;
+}
+
+.socials ul li {
+  display: inline-block;
+}
+
+.socials .ico-circle {
+  height: 40px;
+  width: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.6;
+  margin: 10px 15px 0 0;
+  box-shadow: 0 0 0 3px #0078ff;
+  transition: all 500ms ease;
+}
+
+.socials .ico-circle:hover {
+  background-color: #0078ff;
+  color: #fff;
+  box-shadow: 0 0 0 3px #cde1f8;
+  transition: all 500ms ease;
+}
+
+a {
+  color: #1e1e1e;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+
+}
+
+a:hover {
+  color: #0078ff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+/*------/ Ico Circle /------*/
+.ico-circle {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 5% auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  display: block;
+  padding-top: 5px;
+}
