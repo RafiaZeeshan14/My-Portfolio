@@ -5,7 +5,7 @@ https://heremy-portfolio.netlify.app/
 
 ## Description
 The Portfolio project is a personal website that showcases your skills, projects, and experience. 
-It serves as a professional platform to highlight your work and accomplishments to potential employers, clients, or collaborators.
+It serves as a professional platform to highlight your work and accomplishments to potential employers, or clients.
 
 ## Features
 - About Me: Introduce yourself and provide a brief overview of your skills and experience.
