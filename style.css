@@ -85,7 +85,7 @@
   color: #e7d4d5;
   overflow: hidden;
   white-space: nowrap;
-  width: 95%;
+  width: 99%;
   animation: typing 3s steps(21) infinite alternate, cursor .8s step-end infinite alternate;
 
 }
